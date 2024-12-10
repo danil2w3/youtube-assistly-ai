@@ -9,8 +9,6 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 
-const currentDateTime = new Date().toISOString();
-
 function CreateChatbot() {
   const {user} = useUser();
   const [name, setName] = useState("");
@@ -21,8 +19,7 @@ function CreateChatbot() {
     {
     variables: {
       clerk_user_id: user?.id,
-      name,
-      created_at: currentDateTime,
+      name
     },
   }
 );

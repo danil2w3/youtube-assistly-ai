@@ -119,7 +119,7 @@ function EditChatbot({ params: { id } }:  { params: { id: string } }) {
 
     if(error) return <p>Error: {error.message}</p>
 
-    if(!data?.chatbots) return redirect("/view-chatbots");
+    if(!data?.chatbots) return redirect("/view-chatbot");
 
   return (
   <div className='px-0 md:p-10'>

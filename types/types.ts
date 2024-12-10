@@ -47,7 +47,7 @@ export interface GetChatbotByIdVariables {
 }
 
 export interface GetChatbotsByUserData {
-    chatbotsByUser: Chatbot[];
+    chatbots: Chatbot[];
 }
 
 export interface GetChatbotsByUserDataVariables {
